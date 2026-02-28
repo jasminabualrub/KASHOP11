@@ -10,26 +10,10 @@ using System.Threading.Tasks;
 
 namespace KASHOP11.DAL.Repository
 {
-public class CategoryRepository :ICategoryRepository
+public class CategoryRepository :GenericRepository<Category>, ICategoryRepository
     {
-        private readonly ApplicationDbContext _context;
-        public CategoryRepository(ApplicationDbContext context)
-        {
-            _context = context;
-        }
 
-        public async Task < Category> CreateAsync (Category category)
-        {
-           
-             await _context.categories.AddAsync(category);
-            _context.SaveChanges();
-            return category;
-        }
-
-        public async Task<List<Category>> GetAllAsync()
-        {
-            return await _context.categories.Include(c => c.Translations).ToListAsync(); ;
-        }
+        public CategoryRepository(ApplicationDbContext context) : base(context) { }
 
       
     }
