@@ -174,3 +174,4 @@ C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Mapster.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Mapster.Core.dll
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\KASHOP11.PL.sourcelink.json

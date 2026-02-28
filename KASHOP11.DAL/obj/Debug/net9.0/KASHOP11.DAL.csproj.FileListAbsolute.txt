@@ -12,3 +12,4 @@ C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.DAL\obj\Debug\ne
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.DAL\obj\Debug\net9.0\KASHOP11.DAL.pdb
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.DAL\obj\Debug\net9.0\KASHOP11.DAL.genruntimeconfig.cache
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.DAL\obj\Debug\net9.0\ref\KASHOP11.DAL.dll
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.DAL\obj\Debug\net9.0\KASHOP11.DAL.sourcelink.json
