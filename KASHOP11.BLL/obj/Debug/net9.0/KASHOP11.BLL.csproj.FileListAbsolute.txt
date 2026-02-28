@@ -1,0 +1,15 @@
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.BLL\bin\Debug\net9.0\KASHOP11.BLL.deps.json
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.BLL\bin\Debug\net9.0\KASHOP11.BLL.dll
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.BLL\bin\Debug\net9.0\KASHOP11.BLL.pdb
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.BLL\bin\Debug\net9.0\KASHOP11.DAL.dll
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.BLL\bin\Debug\net9.0\KASHOP11.DAL.pdb
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.BLL\obj\Debug\net9.0\KASHOP11.BLL.csproj.AssemblyReference.cache
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.BLL\obj\Debug\net9.0\KASHOP11.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.BLL\obj\Debug\net9.0\KASHOP11.BLL.AssemblyInfoInputs.cache
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.BLL\obj\Debug\net9.0\KASHOP11.BLL.AssemblyInfo.cs
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.BLL\obj\Debug\net9.0\KASHOP11.BLL.csproj.CoreCompileInputs.cache
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.BLL\obj\Debug\net9.0\KASHOP11.FA5EA496.Up2Date
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.BLL\obj\Debug\net9.0\KASHOP11.BLL.dll
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.BLL\obj\Debug\net9.0\refint\KASHOP11.BLL.dll
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.BLL\obj\Debug\net9.0\KASHOP11.BLL.pdb
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.BLL\obj\Debug\net9.0\ref\KASHOP11.BLL.dll
