@@ -20,7 +20,8 @@ namespace KASHOP11.PL.Controllers
     {
         private readonly ICategoryService _categoryservice;
         private readonly IStringLocalizer<SharedResources> _localizer;
-        public CategoriesController(ICategoryService categoryservice, IStringLocalizer<SharedResources>localizer) {
+        public CategoriesController(ICategoryService categoryservice, IStringLocalizer<SharedResources> localizer)
+        {
             _categoryservice = categoryservice;
             _localizer = localizer;
 
@@ -28,24 +29,32 @@ namespace KASHOP11.PL.Controllers
         [HttpGet("")]
         public async Task<IActionResult> Index()
         {
-            var categories =await _categoryservice.GetAllCategories();
-          
+            var categories = await _categoryservice.GetAllCategories();
+
             var response = categories.Adapt<List<CategoryResponse>>();
 
             _categoryservice.GetAllCategories();
 
-            return Ok(new { data=response,_localizer["Success"].Value });
+            return Ok(new { data = response, _localizer["Success"].Value });
         }
         [HttpPost("")]
         public async Task<IActionResult> create(CategoryRequest request)
         {
             var category = request.Adapt<Category>();
-           var response= await _categoryservice.CreateCategory(request);
+            var response = await _categoryservice.CreateCategory(request);
 
-         
-            return Ok(new { message= _localizer["Success"].Value ,response});
-           
+
+            return Ok(new { message = _localizer["Success"].Value, response });
+
         }
-      
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            return Ok( await _categoryservice.GetCategory(c => c.Id == id));
+           
+
+
+        }
+
     }
 }

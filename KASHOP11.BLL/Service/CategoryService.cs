@@ -6,6 +6,7 @@ using Mapster;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,7 +23,7 @@ namespace KASHOP11.BLL.Service
 
         public async Task<List<CategoryResponse>> GetAllCategories()
         {
-            var categories = await _categoryRepository.GetAllAsync();
+            var categories = await _categoryRepository.GetAllAsync(new string[] {nameof(Category.Translations)});
             return categories.Adapt<List<CategoryResponse>>();
         }
         public async Task <CategoryResponse> CreateCategory(CategoryRequest req)
@@ -30,6 +31,12 @@ namespace KASHOP11.BLL.Service
             var category = req.Adapt<Category>();
              await _categoryRepository.CreateAsync(category);
             return category.Adapt<CategoryResponse>();
+        }
+
+        public async Task <CategoryResponse?> GetCategory (Expression<Func<Category, bool>> filter)
+        {
+            var category = await _categoryRepository.GetOne(filter, new string[] { nameof(Category.Translations) });
+            return category?.Adapt<CategoryResponse>();
         }
     }
 }
