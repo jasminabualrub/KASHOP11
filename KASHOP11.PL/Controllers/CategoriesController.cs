@@ -50,10 +50,20 @@ namespace KASHOP11.PL.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            return Ok( await _categoryservice.GetCategory(c => c.Id == id));
+             return Ok( await _categoryservice.GetCategory(c => c.Id == id));
            
 
 
+        }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult>Delete(int id)
+        {
+            var deleted = await _categoryservice.DeleteCategory(id);
+            if (!deleted)
+            {
+                return NotFound(new { message = _localizer["notfound"].Value });
+            }
+            return Ok(new { message = _localizer["success"].Value });
         }
 
     }

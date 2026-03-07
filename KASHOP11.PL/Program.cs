@@ -1,7 +1,9 @@
 
 using KASHOP11.BLL.Service;
 using KASHOP11.DAL.Data;
+using KASHOP11.DAL.Models;
 using KASHOP11.DAL.Repository;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -38,6 +40,8 @@ namespace KASHOP11.PL
             });
             builder.Services.AddScoped<ICategoryRepository,CategoryRepository >();
             builder.Services.AddScoped<ICategoryService, CategoryService>();
+            builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+            builder.Services.AddIdentity<ApplicationUser,IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
             var app = builder.Build();
             app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
             // Configure the HTTP request pipeline.

@@ -38,5 +38,12 @@ namespace KASHOP11.BLL.Service
             var category = await _categoryRepository.GetOne(filter, new string[] { nameof(Category.Translations) });
             return category?.Adapt<CategoryResponse>();
         }
+
+        public async Task<bool> DeleteCategory(int id)
+        {
+            var category = await _categoryRepository.GetOne(c => c.Id == id);
+            if (category == null) return false;
+            return await _categoryRepository.DeleteAsync(category);
+        }
     }
 }
