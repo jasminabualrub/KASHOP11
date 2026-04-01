@@ -12,6 +12,9 @@ namespace KASHOP11.DAL.Models
         public string FullName { get; set; }
         public string? city { get; set; }
         public string? street { get; set; }
+        public string? CodeResetPassword { get; set; }
+        public DateTime? PasswordResetExpire { get; set; }
+        public List<Category> Categories { get; set; }
 
     }
 }

@@ -6,10 +6,13 @@ using KASHOP11.DAL.Models;
 using KASHOP11.DAL.Repository;
 using KASHOP11.PL.Resources;
 using Mapster;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
+using System.Runtime.CompilerServices;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace KASHOP11.PL.Controllers
@@ -27,9 +30,11 @@ namespace KASHOP11.PL.Controllers
 
         }
         [HttpGet("")]
+        //[Authorize]
         public async Task<IActionResult> Index()
         {
-            var categories = await _categoryservice.GetAllCategories();
+            var lang = Request.Headers["Accept-lang"].ToString();
+            var categories = await _categoryservice.GetAllCategories(lang);
 
             var response = categories.Adapt<List<CategoryResponse>>();
 
@@ -38,9 +43,11 @@ namespace KASHOP11.PL.Controllers
             return Ok(new { data = response, _localizer["Success"].Value });
         }
         [HttpPost("")]
+       // [Authorize]
         public async Task<IActionResult> create(CategoryRequest request)
         {
             var category = request.Adapt<Category>();
+           /* var user = User.FindFirstValue(ClaimTypes.NameIdentifier);*/
             var response = await _categoryservice.CreateCategory(request);
 
 
@@ -50,13 +57,14 @@ namespace KASHOP11.PL.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-             return Ok( await _categoryservice.GetCategory(c => c.Id == id));
-           
+            return Ok(await _categoryservice.GetCategory(c => c.Id == id));
+
 
 
         }
         [HttpDelete("{id}")]
-        public async Task<IActionResult>Delete(int id)
+      //  [Authorize]
+        public async Task<IActionResult> Delete(int id)
         {
             var deleted = await _categoryservice.DeleteCategory(id);
             if (!deleted)
@@ -65,6 +73,11 @@ namespace KASHOP11.PL.Controllers
             }
             return Ok(new { message = _localizer["success"].Value });
         }
+        //[HttpPatch("id")]
+        ////    //public Task<CategoryResponse> UpdateCategory(int id, CategoryRequest req)
+        ////    //{  var 
 
-    }
-}
+        //    //}
+
+        //
+    } }

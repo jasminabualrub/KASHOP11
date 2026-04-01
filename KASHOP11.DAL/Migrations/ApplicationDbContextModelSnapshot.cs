@@ -30,6 +30,9 @@ namespace KASHOP11.DAL.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<string>("CodeResetPassword")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -61,6 +64,9 @@ namespace KASHOP11.DAL.Migrations
 
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("PasswordResetExpire")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
@@ -105,7 +111,23 @@ namespace KASHOP11.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("createdById")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("createdOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("updatedById")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("updatedOn")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("createdById");
+
+                    b.HasIndex("updatedById");
 
                     b.ToTable("categories");
                 });
@@ -269,6 +291,22 @@ namespace KASHOP11.DAL.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("KASHOP11.DAL.Models.Category", b =>
+                {
+                    b.HasOne("KASHOP11.DAL.Models.ApplicationUser", "createdBy")
+                        .WithMany("Categories")
+                        .HasForeignKey("createdById")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("KASHOP11.DAL.Models.ApplicationUser", "updatedBy")
+                        .WithMany()
+                        .HasForeignKey("updatedById");
+
+                    b.Navigation("createdBy");
+
+                    b.Navigation("updatedBy");
+                });
+
             modelBuilder.Entity("KASHOP11.DAL.Models.CategoryTranslation", b =>
                 {
                     b.HasOne("KASHOP11.DAL.Models.Category", "Category")
@@ -329,6 +367,11 @@ namespace KASHOP11.DAL.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("KASHOP11.DAL.Models.ApplicationUser", b =>
+                {
+                    b.Navigation("Categories");
                 });
 
             modelBuilder.Entity("KASHOP11.DAL.Models.Category", b =>

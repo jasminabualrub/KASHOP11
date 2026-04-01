@@ -1,5 +1,6 @@
 ﻿using KASHOP11.BLL.Service;
 using KASHOP11.DAL.DTO.Request;
+using KASHOP11.DAL.DTO.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,10 +16,39 @@ namespace KASHOP11.PL.Controllers
             _authenticationservice = authenticationservice;
         }
         [HttpPost("register")]
-        public async Task <IActionResult> Register (RegisterRequest req)
+        public async Task<IActionResult> Register(RegisterRequest req)
         {
             var result = await _authenticationservice.RegisterAsync(req);
             return Ok(result);
         }
+        [HttpPost("login")]
+        public async Task <IActionResult>Login(LoginRequest req)
+        {
+            var result = await _authenticationservice.LoginAsync(req);
+            if (!result.Success) return BadRequest(result);
+            return Ok(result);
+        }
+        [HttpGet("ConfirmEmail")]
+        public async Task <IActionResult> ConfirmEmail(string token,string userid)
+        { var isconfirmed = await _authenticationservice.ConfirmedEmailAsync(token, userid);
+            if (isconfirmed) return Ok(new { message = "ok" });
+
+            return BadRequest();
+        }
+        [HttpPost("SendCode")]
+        public async Task <IActionResult>RequestPasswordReset(ForgotPasswordRequest req)
+        {
+            var result = await _authenticationservice.RequestPasswordReset(req);
+            if (!result.Success) return BadRequest(result);
+            return Ok(result);
+        }
+        [HttpPost("ResetPassword")]
+        public async Task<IActionResult> PasswordAsync(ResetPasswordRequest req)
+        {
+            var result = await _authenticationservice.ResetPasswordAsync(req);
+            if (!result.Success) return BadRequest(result);
+            return Ok(result);
+        }
+
     }
 }

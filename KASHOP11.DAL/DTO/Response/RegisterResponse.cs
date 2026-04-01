@@ -10,5 +10,6 @@ namespace KASHOP11.DAL.DTO.Response
     {
         public string Message { get; set; }
         public bool Success { get; set; }
+        public List<string>? Errors { get; set; }
     }
 }
