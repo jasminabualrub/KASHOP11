@@ -33,21 +33,18 @@ namespace KASHOP11.PL.Controllers
         //[Authorize]
         public async Task<IActionResult> Index()
         {
-            var lang = Request.Headers["Accept-lang"].ToString();
-            var categories = await _categoryservice.GetAllCategories(lang);
+           // var lang = Request.Headers["Accept-lang"].ToString();
 
-            var response = categories.Adapt<List<CategoryResponse>>();
-
-            _categoryservice.GetAllCategories();
+            var response = await _categoryservice.GetAllCategories();
 
             return Ok(new { data = response, _localizer["Success"].Value });
         }
         [HttpPost("")]
-       // [Authorize]
+        [Authorize]
         public async Task<IActionResult> create(CategoryRequest request)
         {
             var category = request.Adapt<Category>();
-           /* var user = User.FindFirstValue(ClaimTypes.NameIdentifier);*/
+            /* var user = User.FindFirstValue(ClaimTypes.NameIdentifier);*/
             var response = await _categoryservice.CreateCategory(request);
 
 
@@ -63,7 +60,7 @@ namespace KASHOP11.PL.Controllers
 
         }
         [HttpDelete("{id}")]
-      //  [Authorize]
+        //  [Authorize]
         public async Task<IActionResult> Delete(int id)
         {
             var deleted = await _categoryservice.DeleteCategory(id);
@@ -80,4 +77,5 @@ namespace KASHOP11.PL.Controllers
         //    //}
 
         //
-    } }
+    }
+}

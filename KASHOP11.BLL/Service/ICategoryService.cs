@@ -12,7 +12,7 @@ namespace KASHOP11.BLL.Service
 {
    public interface ICategoryService
     {
-        Task<List<CategoryResponse>> GetAllCategories(string lang = "en");
+        Task<List<CategoryResponse>> GetAllCategories();
        Task <CategoryResponse> CreateCategory(CategoryRequest request);
        Task<CategoryResponse?> GetCategory(Expression<Func<Category, bool>> filter);
         Task<bool> DeleteCategory(int id);

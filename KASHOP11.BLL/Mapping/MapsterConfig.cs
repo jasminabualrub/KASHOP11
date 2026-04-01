@@ -3,6 +3,7 @@ using KASHOP11.DAL.Models;
 using Mapster;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,11 +14,15 @@ namespace KASHOP11.BLL.Mapping
     {
         public static void MapsterConfigRegister() {
             TypeAdapterConfig<Category, CategoryResponse>.NewConfig()
-                .Map(dest => dest.categoryId, source => source.Id)
-              //  .Map(dest=>dest.User,source=>source.createdBy.UserName)
-                 .Map(dest => dest.Name, source => source.Translations.Where(t => t.Language == MapContext.Current.Parameters["lang"].ToString())
-                 .Select(t=>t.Name).FirstOrDefault());
-            // 
+.Map(dest => dest.categoryId, src => src.Id)
+.Map(dest => dest.User, src => src.createdBy != null ? src.createdBy.UserName : "Unknown")
+.Map(dest => dest.Translations, src => src.Translations.Where(t => t.Language == CultureInfo
+.CurrentCulture.Name).Select(t => t.Name).FirstOrDefault());
+
+
+
+
+
 
 
 

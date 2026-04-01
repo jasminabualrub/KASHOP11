@@ -1,4 +1,3 @@
-
 using KASHOP11.BLL.Mapping;
 using KASHOP11.BLL.Service;
 using KASHOP11.DAL.Data;
@@ -11,6 +10,7 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+
 using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +27,7 @@ namespace KASHOP11.PL
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddHttpContextAccessor();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
             var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -57,7 +58,7 @@ namespace KASHOP11.PL
                 options.SupportedUICultures = supportedCultures;
                 options.RequestCultureProviders.Add(new AcceptLanguageHeaderRequestCultureProvider());
             });
-            builder.Services.AddScoped<ICategoryRepository,CategoryRepository >();
+            builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
             builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
@@ -76,7 +77,7 @@ namespace KASHOP11.PL
             .AddDefaultTokenProviders();
 
 
-           
+
 
 
             builder.Services.AddAuthentication(options =>
@@ -104,10 +105,11 @@ namespace KASHOP11.PL
 
             app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.MapOpenApi();
-            }
+
+            app.MapOpenApi();
+            //app.MapScalarApiReference();
+
+
             app.UseCors(MyAllowSpecificOrigins);
             app.UseHttpsRedirection();
             app.UseAuthentication();
@@ -120,13 +122,13 @@ namespace KASHOP11.PL
             {
                 var services = scope.ServiceProvider;
                 var seeders = services.GetServices<ISeedData>();
-                foreach(var seeder in seeders)
+                foreach (var seeder in seeders)
                 {
-                   await seeder.DataSeed();
+                    await seeder.DataSeed();
                 }
             }
 
-                app.Run();
+            app.Run();
         }
     }
 }

@@ -10,7 +10,7 @@ namespace KASHOP11.DAL.DTO.Response
     {
         public int categoryId { get; set; }
         public string User { get; set; }
-        //public List <CategoryTranslationResponse> Translations { get; set; }
-        public string Name { get; set; }
+        public List <CategoryTranslationResponse> Translations { get; set; }
+        //public string Name { get; set; }
     }
 }
