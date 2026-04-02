@@ -26,18 +26,38 @@ namespace KASHOP11.BLL.Service
 
         }
 
+        //public async Task<List<CategoryResponse>> GetAllCategories()
+        //{
+        //    // جلب كل الـ categories مع الترجمات
+        //    var categories = await _categoryRepository.GetAllAsync(new string[]
+        //    {
+        //nameof(Category.Translations)
+        //    });
 
+        //    // تحويل كل Category إلى CategoryResponse باستخدام Mapster
+        //    var response = categories.Adapt<List<CategoryResponse>>();
+
+        //    return response;
+        //}
         public async Task<List<CategoryResponse>> GetAllCategories()
         {
-            var categories = await _categoryRepository.GetAllAsync(new string[] { 
+            var categories = await _categoryRepository.GetAllAsync(new string[] {
                 nameof(Category.Translations),
                 nameof(Category.createdBy) });
             foreach (var c in categories)
             {
                 Console.WriteLine(c.createdBy == null ? "NULL" : "NOT NULL");
             }
-            return categories.BuildAdapter().AdaptToType<List<CategoryResponse>>();
-
+            return categories.Select(c => new CategoryResponse
+            {
+                categoryId = c.Id,
+                User = "Unknown",
+                Translations = c.Translations?.Select(t => new CategoryTranslationResponse
+                {
+                    Name = t.Name,
+                    Language = t.Language
+                }).ToList() ?? new List<CategoryTranslationResponse>()
+            }).ToList();
 
 
         }
