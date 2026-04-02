@@ -20,6 +20,11 @@ namespace KASHOP11.BLL.Mapping
 .CurrentCulture.Name).Select(t => t.Name).FirstOrDefault());
 
 
+            TypeAdapterConfig<Product, ProductResponse>.NewConfig()
+
+.Map(dest => dest.UserCreated, src => src.createdBy.UserName )
+.Map(dest => dest.Name, src => src.Translations.Where(t => t.Language == CultureInfo
+.CurrentCulture.Name).Select(t => t.Name).FirstOrDefault());
 
 
 

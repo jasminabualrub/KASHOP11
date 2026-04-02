@@ -35,11 +35,11 @@ namespace KASHOP11.BLL.Service
         {
             var products = await _ProductRepository.GetAllAsync(
 
-                //new string[]
-                //{
-                //    nameof(Product.Translations),
-                //    nameof(Product.createdBy)
-                //}
+                new string[]
+                {
+                    nameof(Product.Translations),
+                    nameof(Product.createdBy)
+                }
                 );
             return products.Adapt<List<ProductResponse>>();
         }
