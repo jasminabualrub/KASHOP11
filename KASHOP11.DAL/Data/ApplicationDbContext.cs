@@ -19,6 +19,8 @@ namespace KASHOP11.DAL.Data
 
         public DbSet <Category> categories { set; get; }
         public DbSet<CategoryTranslation> categoryTranslations { set; get; }
+        public DbSet<Product> Products { set; get; }
+        public DbSet<ProductTranslation> ProductTranslations { set; get; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options,IHttpContextAccessor httpContextAccessor)
             : base(options)
         {
@@ -30,13 +32,36 @@ namespace KASHOP11.DAL.Data
             modelBuilder.Entity<ApplicationUser>().ToTable("users");
             modelBuilder.Entity<IdentityRole>().ToTable("Roles");
             modelBuilder.Entity<IdentityUserRole<string>>().ToTable("UserRoles");
+       //     modelBuilder.Entity<Category>()
+       ////.HasOne(c => c.createdBy)
+       ////.WithMany(u => u.Categories)
+       ////.HasForeignKey(c => c.createdById)
+       ////.OnDelete(DeleteBehavior.Restrict);
             modelBuilder.Entity<Category>()
-       .HasOne(c => c.createdBy)
-       .WithMany(u => u.Categories)
-       .HasForeignKey(c => c.createdById)
-       .OnDelete(DeleteBehavior.Restrict);
+                .HasOne(p=>p.createdBy)
+                .WithMany()
+                .HasForeignKey(p=>p.createdById)
+                .OnDelete(DeleteBehavior.Restrict)
+                ;
+            modelBuilder.Entity<Category>().HasOne(p => p.updatedBy)
+               .WithMany()
+               .HasForeignKey(p => p.updatedById)
+               .OnDelete(DeleteBehavior.Restrict)
+               ;
+            modelBuilder.Entity<Product>()
+               .HasOne(p => p.createdBy)
+               .WithMany()
+               .HasForeignKey(p => p.createdById)
+               .OnDelete(DeleteBehavior.Restrict)
+               ;
+            modelBuilder.Entity<Product>().HasOne(p => p.updatedBy)
+               .WithMany()
+               .HasForeignKey(p => p.updatedById)
+               .OnDelete(DeleteBehavior.Restrict)
+               ;
 
         }
+        
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         { if(_httpContextAccessor.HttpContext != null)
