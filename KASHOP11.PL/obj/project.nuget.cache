@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gHJsMphBOhI=",
+  "dgSpecHash": "CrrTbKIYfyY=",
   "success": true,
   "projectFilePath": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.PL\\KASHOP11.PL.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
     "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\9.0.13\\microsoft.aspnetcore.identity.entityframeworkcore.9.0.13.nupkg.sha512",
     "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.10\\microsoft.aspnetcore.openapi.9.0.10.nupkg.sha512",
+    "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.azure.amqp\\2.7.2\\microsoft.azure.amqp.2.7.2.nupkg.sha512",
     "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.build.framework\\17.8.43\\microsoft.build.framework.17.8.43.nupkg.sha512",
     "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.build.locator\\1.7.8\\microsoft.build.locator.1.7.8.nupkg.sha512",

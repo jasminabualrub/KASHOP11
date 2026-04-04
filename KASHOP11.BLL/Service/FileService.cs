@@ -15,7 +15,7 @@ namespace KASHOP11.BLL.Service
             if(file!=null && file.Length > 0)
             {
                 var fileName = Guid.NewGuid().ToString()+Path.GetExtension(file.FileName);
-                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "images", fileName);
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot","images", fileName);
                 using(var stream = File.Create(filePath))
                 {
                     await file.CopyToAsync(stream);
@@ -23,6 +23,13 @@ namespace KASHOP11.BLL.Service
                 return fileName;
             }
             return null;
+        }
+    
+    
+       public void Delete(string FileName)
+        {
+            var path = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot","images",FileName);
+            if (File.Exists(path)) File.Delete(path);
         }
     }
 }

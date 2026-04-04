@@ -12,7 +12,7 @@ namespace KASHOP11.DAL.Models
         public string ? updatedById { get; set; }
         public DateTime createdOn { get; set; }
         public DateTime  ? updatedOn { get; set; }
-        public ApplicationUser createdBy { get; set; }
+        public ApplicationUser ? createdBy { get; set; }
         public ApplicationUser ? updatedBy { get; set; }
     }
 }

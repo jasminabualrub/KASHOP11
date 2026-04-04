@@ -194,6 +194,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "KASHOP11.PL.Controllers.ProductsController",
+    "Method": "Index",
+    "RelativePath": "api/Products/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KASHOP11.PL.Controllers.ProductsController",
+    "Method": "Delete",
+    "RelativePath": "api/Products/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KASHOP11.PL.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

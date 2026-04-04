@@ -32,22 +32,33 @@ namespace KASHOP11.PL.Controllers
 
             return Ok(new { data = product, _localizer["Success"].Value });
         }
+        [HttpGet("{id}")]
+        //[Authorize]
+        public async Task<IActionResult> Index(int id)
+        {
+
+
+            var product = await _productservice.GetProduct(p=>p.Id==id);
+            if (product == null) return NotFound();
+            return Ok(new { data = product, _localizer["Success"].Value });
+        }
         [HttpPost("")]
         [Authorize]
-        public async Task<IActionResult> create([FromForm]ProductRequest request)
+        public async Task<IActionResult> create([FromForm] ProductRequest request)
         {
             await _productservice.CreateProduct(request);
             return Ok();
 
         }
-        //[HttpDelete("{id}")]
-        //[Authorize]
-        //public async Task<IActionResult>Delete(int id)
-        //{
-        //    var deleted = await _productservice.DeleteProduct(id);
-        //    if (!deleted) return BadRequest();
-        //    return Ok();
-        //}
-    
+
+        [HttpDelete("{id}")]
+        [Authorize]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var deleted = await _productservice.DeleteProduct(id);
+            if (!deleted) return BadRequest();
+            return Ok();
+        }
+
     }
 }

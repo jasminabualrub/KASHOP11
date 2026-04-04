@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fKHBzS9SgTw=",
+  "dgSpecHash": "DCcKgt6mMCA=",
   "success": true,
   "projectFilePath": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\KASHOP11.BLL.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.9\\microsoft.aspnetcore.http.abstractions.2.3.9.nupkg.sha512",
     "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
     "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\9.0.13\\microsoft.aspnetcore.identity.entityframeworkcore.9.0.13.nupkg.sha512",
+    "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.azure.amqp\\2.7.2\\microsoft.azure.amqp.2.7.2.nupkg.sha512",
     "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.6\\microsoft.data.sqlclient.5.1.6.nupkg.sha512",

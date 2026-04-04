@@ -10,7 +10,7 @@ namespace KASHOP11.BLL.Service
     public interface IFileService
     {
         Task<string?> UploadAsync(IFormFile file);
-
+        void Delete(string FileName);
 
     }
 }

@@ -13,5 +13,6 @@ namespace KASHOP11.DAL.Repository
         public ProductRepository(ApplicationDbContext context) : base(context)
         {
         }
+
     }
 }

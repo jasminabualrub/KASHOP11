@@ -104,6 +104,8 @@ namespace KASHOP11.PL
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
             builder.Services.AddScoped<IFileService, FileService>();
+            builder.Services.AddHttpContextAccessor();
+            builder.Services.AddScoped<CurrentUserService>();
             var app = builder.Build();
 
             app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
@@ -112,14 +114,14 @@ namespace KASHOP11.PL
             app.MapOpenApi();
             //app.MapScalarApiReference();
 
-
+            
             app.UseCors(MyAllowSpecificOrigins);
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
             MapsterConfig.MapsterConfigRegister();
 
-
+            app.UseStaticFiles();
             app.MapControllers();
             using (var scope = app.Services.CreateScope())
             {
