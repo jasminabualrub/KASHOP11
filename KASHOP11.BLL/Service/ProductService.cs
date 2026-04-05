@@ -69,7 +69,73 @@ namespace KASHOP11.BLL.Service
             return await _ProductRepository.DeleteAsync(product);
 
         }
+        public async Task<bool> UpdateProduct(int id, ProductUpdateRequest req)
+        {
+            //var product = await _ProductRepository.GetOne(p=>p.Id==id);
+            //if (product == null) return false;
+            // req.Adapt<Product>();
+            //var oldImg = product.MainImage;
+            //if (req.MainImage != null) {
+            //    _fileService.Delete(oldImg);
+            //    product.MainImage = await _fileService.UploadAsync(req.MainImage);
 
+            //}
+            //else
+            //{
+            //    product.MainImage = oldImg;
+            //}
+            //return await _ProductRepository.UpdateAsync(product);
+            //return true;
+
+            var productDb = await _ProductRepository.GetOne(p => p.Id == id,
+                new string[] {nameof(Product.Translations)});
+            if (productDb == null) return false;
+
+            var oldImg = productDb.MainImage;
+            var product = req.Adapt<Product>();
+            if (req.Translations != null)
+            {
+                foreach(var translationReq in req.Translations)
+                {
+                    var existing = product.Translations.FirstOrDefault(p => p.Language == translationReq.Language);
+                    if (existing != null)
+                    {
+                        if (translationReq.Name != null)
+                        {
+                            existing.Name = translationReq.Name;
+                        }
+                        if (translationReq.Description != null)
+                        {
+                            existing.Description = translationReq.Description;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            product.Id = id;
+            if (req.Price == null) product.Price = productDb.Price;
+            if (req.Discount == null) product.Discount = productDb.Discount;
+            if (req.Quantity == null) product.Quantity = productDb.Quantity;
+            if (req.CategoryId == null) product.CategoryId = productDb.CategoryId;
+
+
+            if (req.MainImage != null)
+            {
+                _fileService.Delete(oldImg);
+                product.MainImage = await _fileService.UploadAsync(req.MainImage);
+            }
+            else
+            {
+                product.MainImage = oldImg;
+            }
+
+            return await _ProductRepository.UpdateAsync(product);
+
+        }
     }
-    
+
 }
+    

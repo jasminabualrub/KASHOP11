@@ -38,7 +38,7 @@ namespace KASHOP11.PL.Controllers
         {
 
 
-            var product = await _productservice.GetProduct(p=>p.Id==id);
+            var product = await _productservice.GetProduct(p => p.Id == id);
             if (product == null) return NotFound();
             return Ok(new { data = product, _localizer["Success"].Value });
         }
@@ -47,6 +47,15 @@ namespace KASHOP11.PL.Controllers
         public async Task<IActionResult> create([FromForm] ProductRequest request)
         {
             await _productservice.CreateProduct(request);
+            return Ok();
+
+        }
+        [HttpPatch("{id}")]
+        [Authorize]
+        public async Task<IActionResult>Update(int id,[FromForm] ProductUpdateRequest req)
+        {
+            var updated = await _productservice.UpdateProduct(id, req);
+            if (!updated) return BadRequest();
             return Ok();
 
         }
