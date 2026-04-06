@@ -38,7 +38,8 @@ namespace KASHOP11.BLL.Service
         public async Task<List<ProductResponse>> GetAllProductsAsync()
         {
             var products = await _ProductRepository.GetAllAsync(
-
+                p=>p.status==EntityStatus.Active
+                ,
                 new string[]
                 {
                     nameof(Product.Translations),
@@ -135,7 +136,17 @@ namespace KASHOP11.BLL.Service
             return await _ProductRepository.UpdateAsync(product);
 
         }
-    }
-
-}
     
+
+
+
+    public async Task<bool> ToggleStatus(int id)
+        {
+            var product = await _ProductRepository.GetOne(p => p.Id == id);
+            if (product == null) return false;
+            product.status = product.status == EntityStatus.Active?EntityStatus.Inactive:EntityStatus.Active;
+            return await _ProductRepository.UpdateAsync(product);
+        }
+}
+}
+
