@@ -103,6 +103,49 @@ namespace KASHOP11.DAL.Migrations
                     b.ToTable("users", (string)null);
                 });
 
+            modelBuilder.Entity("KASHOP11.DAL.Models.Brand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Logo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Brands");
+                });
+
+            modelBuilder.Entity("KASHOP11.DAL.Models.BrandTranslation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BrandId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Language")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BrandId");
+
+                    b.ToTable("BrandTranslations");
+                });
+
             modelBuilder.Entity("KASHOP11.DAL.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -113,10 +156,6 @@ namespace KASHOP11.DAL.Migrations
 
                     b.Property<string>("ApplicationUserId")
                         .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("createdById")
                         .HasColumnType("nvarchar(450)");
@@ -178,6 +217,9 @@ namespace KASHOP11.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("BrandId")
+                        .HasColumnType("int");
+
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
@@ -213,6 +255,8 @@ namespace KASHOP11.DAL.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("BrandId");
 
                     b.HasIndex("CategoryId");
 
@@ -386,6 +430,17 @@ namespace KASHOP11.DAL.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("KASHOP11.DAL.Models.BrandTranslation", b =>
+                {
+                    b.HasOne("KASHOP11.DAL.Models.Brand", "Brand")
+                        .WithMany("Translations")
+                        .HasForeignKey("BrandId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Brand");
+                });
+
             modelBuilder.Entity("KASHOP11.DAL.Models.Category", b =>
                 {
                     b.HasOne("KASHOP11.DAL.Models.ApplicationUser", null)
@@ -420,6 +475,10 @@ namespace KASHOP11.DAL.Migrations
 
             modelBuilder.Entity("KASHOP11.DAL.Models.Product", b =>
                 {
+                    b.HasOne("KASHOP11.DAL.Models.Brand", "Brand")
+                        .WithMany("Products")
+                        .HasForeignKey("BrandId");
+
                     b.HasOne("KASHOP11.DAL.Models.Category", "Category")
                         .WithMany("products")
                         .HasForeignKey("CategoryId")
@@ -435,6 +494,8 @@ namespace KASHOP11.DAL.Migrations
                         .WithMany()
                         .HasForeignKey("updatedById")
                         .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("Brand");
 
                     b.Navigation("Category");
 
@@ -508,6 +569,13 @@ namespace KASHOP11.DAL.Migrations
             modelBuilder.Entity("KASHOP11.DAL.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Categories");
+                });
+
+            modelBuilder.Entity("KASHOP11.DAL.Models.Brand", b =>
+                {
+                    b.Navigation("Products");
+
+                    b.Navigation("Translations");
                 });
 
             modelBuilder.Entity("KASHOP11.DAL.Models.Category", b =>

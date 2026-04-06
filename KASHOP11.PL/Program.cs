@@ -106,6 +106,8 @@ namespace KASHOP11.PL
             builder.Services.AddScoped<IFileService, FileService>();
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddScoped<CurrentUserService>();
+            builder.Services.AddScoped<IBrandService, BrandService>();
+            builder.Services.AddScoped<IBrandRepository, BrandRepository>();
             var app = builder.Build();
 
             app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);

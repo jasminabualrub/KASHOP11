@@ -1,3 +1,5 @@
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\wwwroot\images\ff82c48e-4397-4ab4-a39b-434103676da2.htm
 wwwroot\images\7e48dbb1-b929-4d50-be14-f2d8f101b036.jfif
 wwwroot\images\eddb12ee-61d3-4efd-9123-e3d2b1b742d9.jfif
 wwwroot\images\f3359275-de35-4c16-b4e0-ae3409ba2d70.jfif
+wwwroot\images\ff82c48e-4397-4ab4-a39b-434103676da2.htm

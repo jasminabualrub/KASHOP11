@@ -21,6 +21,8 @@ namespace KASHOP11.DAL.Data
         public DbSet<CategoryTranslation> categoryTranslations { set; get; }
         public DbSet<Product> Products { set; get; }
         public DbSet<ProductTranslation> ProductTranslations { set; get; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<BrandTranslation> BrandTranslations { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options,IHttpContextAccessor httpContextAccessor)
             : base(options)
         {
