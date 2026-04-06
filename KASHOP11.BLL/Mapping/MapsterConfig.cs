@@ -15,14 +15,18 @@ namespace KASHOP11.BLL.Mapping
    public static class MapsterConfig
     {
         public static void MapsterConfigRegister() {
+            //            TypeAdapterConfig<Category, CategoryResponse>.NewConfig()
+            //.Map(dest => dest.categoryId, src => src.Id)
+            //.Map(dest => dest.User, src => src.createdBy != null ? src.createdBy.UserName : "Unknown")
+            //.Map(dest => dest.Translations, src => src.Translations.Where(t => t.Language == CultureInfo
+            //.CurrentCulture.Name).Select(t => t.Name).FirstOrDefault());
+
             TypeAdapterConfig<Category, CategoryResponse>.NewConfig()
-.Map(dest => dest.categoryId, src => src.Id)
-.Map(dest => dest.User, src => src.createdBy != null ? src.createdBy.UserName : "Unknown")
-.Map(dest => dest.Translations, src => src.Translations.Where(t => t.Language == CultureInfo
-.CurrentCulture.Name).Select(t => t.Name).FirstOrDefault());
+              .Map(destniation => destniation.categoryId, source => source.Id)
+              .Map(destniation => destniation.User, source => source.createdBy.UserName)
+              .Map(dest => dest.Name, source => source.Translations
+              .Where(t => t.Language == CultureInfo.CurrentCulture.Name).Select(t => t.Name).FirstOrDefault());
 
-
-            
             TypeAdapterConfig<Product, ProductResponse>.NewConfig()
 
  .Map(dest => dest.UserCreated, src =>

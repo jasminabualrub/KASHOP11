@@ -39,29 +39,42 @@ namespace KASHOP11.BLL.Service
 
         //    return response;
         //}
+        //public async Task<List<CategoryResponse>> GetAllCategories()
+        //{
+        //    var categories = await _categoryRepository.GetAllAsync(
+        //         p => p.status == EntityStatus.Active,
+        //        new string[] {
+        //        nameof(Category.Translations),
+        //        nameof(Category.createdBy) });
+        //    foreach (var c in categories)
+        //    {
+        //        Console.WriteLine(c.createdBy == null ? "NULL" : "NOT NULL");
+        //    }
+        //    return categories.Select(c => new CategoryResponse
+        //    {
+        //        categoryId = c.Id,
+        //        User = "Unknown",
+        //        Translations = c.Translations?.Select(t => new CategoryTranslationResponse
+        //        {
+        //            Name = t.Name,
+        //            Language = t.Language
+        //        }).ToList() ?? new List<CategoryTranslationResponse>()
+        //    }).ToList();
+
+
+        //}
         public async Task<List<CategoryResponse>> GetAllCategories()
         {
             var categories = await _categoryRepository.GetAllAsync(
                  p => p.status == EntityStatus.Active,
                 new string[] {
-                nameof(Category.Translations),
-                nameof(Category.createdBy) });
+         nameof(Category.Translations),
+         nameof(Category.createdBy) });
             foreach (var c in categories)
             {
                 Console.WriteLine(c.createdBy == null ? "NULL" : "NOT NULL");
             }
-            return categories.Select(c => new CategoryResponse
-            {
-                categoryId = c.Id,
-                User = "Unknown",
-                Translations = c.Translations?.Select(t => new CategoryTranslationResponse
-                {
-                    Name = t.Name,
-                    Language = t.Language
-                }).ToList() ?? new List<CategoryTranslationResponse>()
-            }).ToList();
-
-
+            return categories.BuildAdapter().AdaptToType<List<CategoryResponse>>();
         }
         public async Task<CategoryResponse> CreateCategory(CategoryRequest req)
         {
