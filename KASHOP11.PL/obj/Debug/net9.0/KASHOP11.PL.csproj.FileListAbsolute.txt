@@ -1,5 +1,6 @@
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\appsettings.json
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\KASHOP11.PL.staticwebassets.runtime.json
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\KASHOP11.PL.staticwebassets.endpoints.json
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\KASHOP11.PL.exe
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\KASHOP11.PL.deps.json
@@ -17,6 +18,7 @@ C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Microsoft.Azure.Amqp.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Microsoft.Build.Locator.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
@@ -53,7 +55,6 @@ C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Mono.TextTemplating.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\System.ClientModel.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\System.CodeDom.dll
@@ -63,15 +64,12 @@ C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\System.Composition.Runtime.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\System.Composition.TypedParts.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\System.Drawing.Common.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\System.Formats.Asn1.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\System.Memory.Data.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\System.Runtime.Caching.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\System.Security.Permissions.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\System.Text.Json.dll
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\System.Windows.Extensions.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -143,12 +141,7 @@ C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\KASHOP11.BLL.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\KASHOP11.DAL.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\KASHOP11.BLL.pdb
@@ -170,6 +163,8 @@ C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\scopedcss\bundle\KASHOP11.PL.styles.css
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\compressed\zox34zgkz7-9fx4053dqk.gz
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\compressed\entgx3arny-9fx4053dqk.gz
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\staticwebassets.development.json
@@ -181,6 +176,5 @@ C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\KASHOP11.PL.pdb
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\KASHOP11.PL.genruntimeconfig.cache
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\ref\KASHOP11.PL.dll
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Microsoft.Azure.Amqp.dll
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\KASHOP11.PL.staticwebassets.runtime.json
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\compressed\entgx3arny-9fx4053dqk.gz
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\Stripe.net.dll

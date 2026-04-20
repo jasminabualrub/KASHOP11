@@ -23,6 +23,7 @@ namespace KASHOP11.DAL.Data
         public DbSet<ProductTranslation> ProductTranslations { set; get; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<BrandTranslation> BrandTranslations { get; set; }
+        public DbSet<Cart> Carts { set; get; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options,IHttpContextAccessor httpContextAccessor)
             : base(options)
         {
@@ -31,7 +32,7 @@ namespace KASHOP11.DAL.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<ApplicationUser>().ToTable("users");
+            modelBuilder.Entity<ApplicationUser>().ToTable("Users");
             modelBuilder.Entity<IdentityRole>().ToTable("Roles");
             modelBuilder.Entity<IdentityUserRole<string>>().ToTable("UserRoles");
        //     modelBuilder.Entity<Category>()
@@ -61,6 +62,11 @@ namespace KASHOP11.DAL.Data
                .HasForeignKey(p => p.updatedById)
                .OnDelete(DeleteBehavior.Restrict)
                ;
+            modelBuilder.Entity<Product>()
+    .HasOne(p => p.Brand)
+    .WithMany(b => b.Products)
+    .HasForeignKey(p => p.BrandId)
+    .OnDelete(DeleteBehavior.Restrict);
 
         }
         

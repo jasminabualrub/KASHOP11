@@ -3,6 +3,7 @@ using KASHOP11.DAL.DTO.Request;
 using KASHOP11.DAL.DTO.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace KASHOP11.PL.Controllers
 {
@@ -29,12 +30,14 @@ namespace KASHOP11.PL.Controllers
             return Ok(result);
         }
         [HttpGet("ConfirmEmail")]
-        public async Task <IActionResult> ConfirmEmail(string token,string userid)
-        { var isconfirmed = await _authenticationservice.ConfirmedEmailAsync(token, userid);
+        public async Task<IActionResult> ConfirmEmail(string token, string userId)
+        {
+            var isconfirmed = await _authenticationservice.ConfirmedEmailAsync(token, userId);
             if (isconfirmed) return Ok(new { message = "ok" });
 
             return BadRequest();
         }
+
         [HttpPost("SendCode")]
         public async Task <IActionResult>RequestPasswordReset(ForgotPasswordRequest req)
         {

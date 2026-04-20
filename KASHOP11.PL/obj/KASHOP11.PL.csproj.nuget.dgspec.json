@@ -65,6 +65,10 @@
             "Microsoft.Azure.Amqp": {
               "target": "Package",
               "version": "[2.7.2, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[51.0.0, )"
             }
           },
           "imports": [

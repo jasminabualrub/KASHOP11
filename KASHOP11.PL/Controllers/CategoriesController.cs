@@ -23,11 +23,13 @@ namespace KASHOP11.PL.Controllers
     {
         private readonly ICategoryService _categoryservice;
         private readonly IStringLocalizer<SharedResources> _localizer;
-        public CategoriesController(ICategoryService categoryservice, IStringLocalizer<SharedResources> localizer)
+        private readonly IHttpContextAccessor _httpcontextaccessor;
+
+        public CategoriesController(ICategoryService categoryservice, IStringLocalizer<SharedResources> localizer, IHttpContextAccessor httpContextAccessor)
         {
             _categoryservice = categoryservice;
             _localizer = localizer;
-
+            _httpcontextaccessor = httpContextAccessor;
         }
         [HttpGet("")]
         //[Authorize]
@@ -43,10 +45,14 @@ namespace KASHOP11.PL.Controllers
         [Authorize]
         public async Task<IActionResult> create(CategoryRequest request)
         {
+            var userId = _httpcontextaccessor.HttpContext?.User?
+.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            var userName = _httpcontextaccessor.HttpContext?.User?.Identity?.Name;
             var category = request.Adapt<Category>();
             /* var user = User.FindFirstValue(ClaimTypes.NameIdentifier);*/
             var response = await _categoryservice.CreateCategory(request);
-
+            
 
             return Ok(new { message = _localizer["Success"].Value, response });
 

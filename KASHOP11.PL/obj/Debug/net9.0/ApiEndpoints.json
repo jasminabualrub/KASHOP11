@@ -13,7 +13,7 @@
         "IsRequired": false
       },
       {
-        "Name": "userid",
+        "Name": "userId",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -148,6 +148,69 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "KASHOP11.PL.Controllers.CartController",
+    "Method": "AddToCart",
+    "RelativePath": "api/Cart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KASHOP11.DAL.DTO.Request.AddToCartRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KASHOP11.PL.Controllers.CartController",
+    "Method": "GetCart",
+    "RelativePath": "api/Cart",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KASHOP11.PL.Controllers.CartController",
+    "Method": "UpdateQuaintity",
+    "RelativePath": "api/Cart/{productId}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "requset",
+        "Type": "KASHOP11.DAL.Request.UpdateCartRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KASHOP11.PL.Controllers.CartController",
+    "Method": "Removeitem",
+    "RelativePath": "api/Cart/{productId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KASHOP11.PL.Controllers.CategoriesController",
     "Method": "Index",
     "RelativePath": "api/Categories",
@@ -200,6 +263,22 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KASHOP11.PL.Controllers.CheckoutsController",
+    "Method": "Payment",
+    "RelativePath": "api/Checkouts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "KASHOP11.DAL.DTO.Request.CheckoutRequest",
         "IsRequired": true
       }
     ],

@@ -100,7 +100,7 @@ namespace KASHOP11.DAL.Migrations
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
-                    b.ToTable("users", (string)null);
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("KASHOP11.DAL.Models.Brand", b =>
@@ -144,6 +144,24 @@ namespace KASHOP11.DAL.Migrations
                     b.HasIndex("BrandId");
 
                     b.ToTable("BrandTranslations");
+                });
+
+            modelBuilder.Entity("KASHOP11.DAL.Models.Cart", b =>
+                {
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("count")
+                        .HasColumnType("int");
+
+                    b.HasKey("ProductId", "UserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Carts");
                 });
 
             modelBuilder.Entity("KASHOP11.DAL.Models.Category", b =>
@@ -441,6 +459,25 @@ namespace KASHOP11.DAL.Migrations
                     b.Navigation("Brand");
                 });
 
+            modelBuilder.Entity("KASHOP11.DAL.Models.Cart", b =>
+                {
+                    b.HasOne("KASHOP11.DAL.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("KASHOP11.DAL.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("KASHOP11.DAL.Models.Category", b =>
                 {
                     b.HasOne("KASHOP11.DAL.Models.ApplicationUser", null)
@@ -477,7 +514,8 @@ namespace KASHOP11.DAL.Migrations
                 {
                     b.HasOne("KASHOP11.DAL.Models.Brand", "Brand")
                         .WithMany("Products")
-                        .HasForeignKey("BrandId");
+                        .HasForeignKey("BrandId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("KASHOP11.DAL.Models.Category", "Category")
                         .WithMany("products")

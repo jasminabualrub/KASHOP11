@@ -34,14 +34,17 @@ namespace KASHOP11.BLL.Service
             _httpcontextaccessor = httpcontextaccessor;
         }
 
-        public async Task<bool> ConfirmedEmailAsync(string token, string userid)
+        public async Task<bool> ConfirmedEmailAsync(string token, string userId)
         {
-            var user = await _UserManager.FindByIdAsync(userid);
+            var user = await _UserManager.FindByIdAsync(userId);
             if (user == null) return false;
+            // var result = await _UserManager.ConfirmEmailAsync(user, token);
+            token = Uri.UnescapeDataString(token);
             var result = await _UserManager.ConfirmEmailAsync(user, token);
             if (!result.Succeeded) return false;
             return true;
         }
+
 
         public async Task<LoginResponse> LoginAsync(LoginRequest req)
         {

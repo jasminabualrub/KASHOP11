@@ -16,7 +16,7 @@ namespace KASHOP11.DAL.Repository
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
 
-        private readonly ApplicationDbContext _context;
+        protected readonly ApplicationDbContext _context;
         public GenericRepository(ApplicationDbContext context)
         {
             _context = context;
@@ -39,6 +39,7 @@ namespace KASHOP11.DAL.Repository
 
         }
 
+       
         public async Task<List<T>> GetAllAsync(Expression<Func<T,bool>> filter=null, string[] ? includes= null)
         {
             IQueryable<T> query = _context.Set<T>();
@@ -75,7 +76,13 @@ namespace KASHOP11.DAL.Repository
             return affected > 0;
         }
 
-      
+        public async Task<bool> DeleteRangeAsync(List<T> entities)
+        {
+            _context.RemoveRange(entities);
+            return await _context.SaveChangesAsync()>0;
+
+        }
+
     }
 
 }

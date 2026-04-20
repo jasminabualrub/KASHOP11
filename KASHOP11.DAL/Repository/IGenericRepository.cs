@@ -16,6 +16,7 @@ public interface IGenericRepository<T> where T: class
         Task<T?> GetOne(Expression<Func<T, bool>> filter, string[]? includes = null);
         Task <bool> DeleteAsync(T entity);
         Task<bool> UpdateAsync(T entity);
+        Task<bool> DeleteRangeAsync(List<T> entities);
 
     }
    

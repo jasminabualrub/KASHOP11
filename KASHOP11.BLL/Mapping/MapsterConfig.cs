@@ -15,17 +15,12 @@ namespace KASHOP11.BLL.Mapping
    public static class MapsterConfig
     {
         public static void MapsterConfigRegister() {
-            //            TypeAdapterConfig<Category, CategoryResponse>.NewConfig()
-            //.Map(dest => dest.categoryId, src => src.Id)
-            //.Map(dest => dest.User, src => src.createdBy != null ? src.createdBy.UserName : "Unknown")
-            //.Map(dest => dest.Translations, src => src.Translations.Where(t => t.Language == CultureInfo
-            //.CurrentCulture.Name).Select(t => t.Name).FirstOrDefault());
-
+        
             TypeAdapterConfig<Category, CategoryResponse>.NewConfig()
-              .Map(destniation => destniation.categoryId, source => source.Id)
-              .Map(destniation => destniation.User, source => source.createdBy.UserName)
-              .Map(dest => dest.Name, source => source.Translations
-              .Where(t => t.Language == CultureInfo.CurrentCulture.Name).Select(t => t.Name).FirstOrDefault());
+  .Map(destniation => destniation.categoryId, source => source.Id)
+  .Map(destniation => destniation.User, source => source.createdBy.UserName)
+  .Map(dest => dest.Name, source => source.Translations
+  .Where(t => t.Language == CultureInfo.CurrentCulture.Name).Select(t => t.Name).FirstOrDefault());
 
             TypeAdapterConfig<Product, ProductResponse>.NewConfig()
 
@@ -34,14 +29,11 @@ namespace KASHOP11.BLL.Mapping
 
 
              .Map(dest => dest.Name, src =>
-               src.Translations == null
-                             ? "No Name"
-                         : src.Translations
-                  .Where(t => t.Language == CultureInfo.CurrentCulture.Name)
-            .Select(t => t.Name)
-            .FirstOrDefault() ?? "No Name"
+               src.Translations
+.Where(t => t.Language == CultureInfo.CurrentCulture.Name)
+.Select(t => t.Name)
+.FirstOrDefault())
 
-)
 .Map(dest=>dest.MainImage,src=>$" https://localhost:7245/images/{src.MainImage}")
 ;
             TypeAdapterConfig<ProductUpdateRequest, Product>.NewConfig().IgnoreNullValues(true);
@@ -55,7 +47,7 @@ namespace KASHOP11.BLL.Mapping
                      .Select(t => t.Name)
                      .FirstOrDefault() ?? "No Name");
 
-           
+
             TypeAdapterConfig<BrandRequest, Brand>.NewConfig()
                 .Map(dest => dest.Translations,
                      src => src.Translations.Select(t => new BrandTranslation
@@ -63,7 +55,13 @@ namespace KASHOP11.BLL.Mapping
                          Name = t.Name,
                          Language = t.Language
                      }).ToList());
+            TypeAdapterConfig<Cart, CartResponse>.NewConfig().Map(dest => dest.ProductName,
+                source => source.Product.Translations.Where(t => t.Language == CultureInfo.CurrentCulture.Name)
+                .Select(t => t.Name).FirstOrDefault()
 
+                )
+                 .Map(dest => dest.Price, src => src.Product.Price)
+            .Map(dest => dest.ProductImage, src => $" https://localhost:7245/images/{src.Product.MainImage}");
 
 
 
