@@ -178,3 +178,4 @@ C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Release\n
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Release\net9.0\compressed\entgx3arny-9fx4053dqk.gz
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Release\net9.0\Newtonsoft.Json.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Release\net9.0\Stripe.net.dll
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Release\net9.0\libman.json

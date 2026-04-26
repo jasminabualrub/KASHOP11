@@ -40,7 +40,7 @@ namespace KASHOP11.PL
                               .AllowAnyHeader();
                     });
             });
-
+          //  Console.WriteLine(builder.Configuration.GetConnectionString("DefaultConnection"));
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -107,6 +107,7 @@ namespace KASHOP11.PL
             builder.Services.AddScoped<IBrandService, BrandService>();
             builder.Services.AddScoped<IBrandRepository, BrandRepository>();
             builder.Services.AddScoped<ICartService, CartService>();
+            builder.Services.AddScoped<IOrderRepository, OrderRepository>();
             builder.Services.AddScoped<ICartRepository, CartRepository>();
             builder.Services.AddScoped<IFileService, BLL.Service.FileService>();
             builder.Services.AddHttpContextAccessor();
@@ -146,5 +147,6 @@ namespace KASHOP11.PL
 
             app.Run();
         }
+
     }
 }

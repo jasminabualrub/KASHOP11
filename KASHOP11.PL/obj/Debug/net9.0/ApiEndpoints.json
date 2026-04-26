@@ -285,6 +285,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "KASHOP11.PL.Controllers.CheckoutsController",
+    "Method": "Success",
+    "RelativePath": "api/Checkouts/success",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sessionId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KASHOP11.PL.Controllers.ProductsController",
     "Method": "Index",
     "RelativePath": "api/Products",

@@ -11,5 +11,6 @@ namespace KASHOP11.BLL.Service
     public interface ICheckoutService
     {
         Task<CheckoutResponse> ProcessCheckout(string userId, CheckoutRequest request);
+        Task<CheckoutResponse> HandleSuccess(string sessionId);
     }
 }
