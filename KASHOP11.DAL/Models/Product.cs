@@ -15,9 +15,10 @@ namespace KASHOP11.DAL.Models
         public string MainImage { get; set; }
         public int CategoryId { get; set; }
         public Category?Category { get; set; }
-        public List<ProductTranslation> Translations { get; set; }
+        public List<ProductTranslation> Translations { get; set; } = new List<ProductTranslation>();
         public int ? BrandId { get; set; }
         public Brand Brand { get; set; }
+        public List<ProductImage> SubImages { get; set; } = new List<ProductImage>();
 
 
     }

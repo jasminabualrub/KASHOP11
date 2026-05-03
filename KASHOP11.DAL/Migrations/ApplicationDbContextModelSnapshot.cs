@@ -74,6 +74,12 @@ namespace KASHOP11.DAL.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("RefreshTokenExpiry")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -359,6 +365,28 @@ namespace KASHOP11.DAL.Migrations
                     b.HasIndex("updatedById");
 
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("KASHOP11.DAL.Models.ProductImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductImages");
                 });
 
             modelBuilder.Entity("KASHOP11.DAL.Models.ProductTranslation", b =>
@@ -648,6 +676,17 @@ namespace KASHOP11.DAL.Migrations
                     b.Navigation("updatedBy");
                 });
 
+            modelBuilder.Entity("KASHOP11.DAL.Models.ProductImage", b =>
+                {
+                    b.HasOne("KASHOP11.DAL.Models.Product", "Product")
+                        .WithMany("SubImages")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("KASHOP11.DAL.Models.ProductTranslation", b =>
                 {
                     b.HasOne("KASHOP11.DAL.Models.Product", "Product")
@@ -736,6 +775,8 @@ namespace KASHOP11.DAL.Migrations
 
             modelBuilder.Entity("KASHOP11.DAL.Models.Product", b =>
                 {
+                    b.Navigation("SubImages");
+
                     b.Navigation("Translations");
                 });
 #pragma warning restore 612, 618

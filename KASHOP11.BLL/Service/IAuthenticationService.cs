@@ -15,5 +15,6 @@ namespace KASHOP11.BLL.Service
         Task<bool> ConfirmedEmailAsync(string token, string userid);
         Task<ForgotPasswordResponse> RequestPasswordReset(ForgotPasswordRequest request);
         Task<ResetPasswordResponse> ResetPasswordAsync(ResetPasswordRequest req);
+        Task<LoginResponse> RefreshTokenAsync();
     }
 }

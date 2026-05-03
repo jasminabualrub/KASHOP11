@@ -15,6 +15,8 @@ namespace KASHOP11.DAL.Models
         public string? CodeResetPassword { get; set; }
         public DateTime? PasswordResetExpire { get; set; }
         public List<Category> Categories { get; set; }
+        public string? RefreshToken { get; set; }
+        public DateTime RefreshTokenExpiry { get; set; }
 
     }
 }

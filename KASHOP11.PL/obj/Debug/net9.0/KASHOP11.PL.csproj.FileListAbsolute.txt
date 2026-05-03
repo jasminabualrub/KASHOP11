@@ -1,5 +1,6 @@
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\appsettings.json
+C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\libman.json
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\KASHOP11.PL.staticwebassets.runtime.json
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\KASHOP11.PL.staticwebassets.endpoints.json
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Debug\net9.0\KASHOP11.PL.exe
@@ -165,8 +166,6 @@ C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\scopedcss\bundle\KASHOP11.PL.styles.css
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\compressed\zox34zgkz7-9fx4053dqk.gz
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\compressed\entgx3arny-9fx4053dqk.gz
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Debug\net9.0\staticwebassets.development.json

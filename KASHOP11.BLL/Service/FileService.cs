@@ -24,12 +24,27 @@ namespace KASHOP11.BLL.Service
             }
             return null;
         }
-    
-    
-       public void Delete(string FileName)
+
+
+        //public void Delete(string FileName)
+        // {
+        //     var path = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot","images",FileName);
+        //     if (File.Exists(path)) File.Delete(path);
+        // }
+        public void Delete(string? FileName)
         {
-            var path = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot","images",FileName);
-            if (File.Exists(path)) File.Delete(path);
+            if (string.IsNullOrWhiteSpace(FileName))
+                return;
+
+            var path = Path.Combine(
+                Directory.GetCurrentDirectory(),
+                "wwwroot",
+                "images",
+                FileName
+            );
+
+            if (File.Exists(path))
+                File.Delete(path);
         }
     }
 }

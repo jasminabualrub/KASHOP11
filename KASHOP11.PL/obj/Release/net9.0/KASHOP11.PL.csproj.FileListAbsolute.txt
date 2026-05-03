@@ -174,8 +174,6 @@ C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Release\n
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Release\net9.0\ref\KASHOP11.PL.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Release\net9.0\KASHOP11.PL.staticwebassets.runtime.json
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Release\net9.0\Microsoft.Azure.Amqp.dll
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Release\net9.0\compressed\zox34zgkz7-9fx4053dqk.gz
-C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\obj\Release\net9.0\compressed\entgx3arny-9fx4053dqk.gz
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Release\net9.0\Newtonsoft.Json.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Release\net9.0\Stripe.net.dll
 C:\Users\jasmi\OneDrive\Desktop\backend tasks\KASHOP11\KASHOP11.PL\bin\Release\net9.0\libman.json

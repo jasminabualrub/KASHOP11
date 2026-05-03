@@ -52,6 +52,13 @@ namespace KASHOP11.PL.Controllers
             if (!result.Success) return BadRequest(result);
             return Ok(result);
         }
+        [HttpPost("Refresh")]
+        public async Task<IActionResult> Refresh()
+        {
+            var result= await _authenticationservice.RefreshTokenAsync();
+            if (!result.Success) return Unauthorized(result);
+            return Ok(result);
+        }
 
     }
 }

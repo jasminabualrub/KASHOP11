@@ -35,8 +35,11 @@ namespace KASHOP11.BLL.Mapping
 .FirstOrDefault())
 
 .Map(dest=>dest.MainImage,src=>$" https://localhost:7245/images/{src.MainImage}")
-;
+.Map(dest => dest.SubImages , 
+src => src.SubImages.Select(i=>$"https://localhost:7245/images/{i.ImagePath}"));
+            ;
             TypeAdapterConfig<ProductUpdateRequest, Product>.NewConfig().IgnoreNullValues(true);
+              
 
 
             TypeAdapterConfig<Brand, BrandResponse>.NewConfig()
