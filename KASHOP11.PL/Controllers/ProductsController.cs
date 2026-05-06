@@ -24,20 +24,17 @@ namespace KASHOP11.PL.Controllers
         }
         [HttpGet("")]
         [Authorize]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index([FromQuery] PaginationRequest request)
         {
             // var lang = Request.Headers["Accept-lang"].ToString();
 
-            var product = await _productservice.GetAllProductsAsync();
+            var product = await _productservice.GetAllProductsAsync(request);
 
-            return Ok(new { data = product, _localizer["Success"].Value });
+            return Ok (new { data = product, _localizer["Success"].Value });
         }
         [HttpGet("{id}")]
-        //[Authorize]
-        public async Task<IActionResult> Index(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-
-
             var product = await _productservice.GetProduct(p => p.Id == id);
             if (product == null) return NotFound();
             return Ok(new { data = product, _localizer["Success"].Value });

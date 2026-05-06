@@ -1,4 +1,5 @@
-﻿using KASHOP11.DAL.DTO.Request;
+﻿using KASHOP11.BLL.Extensions;
+using KASHOP11.DAL.DTO.Request;
 using KASHOP11.DAL.DTO.Response;
 using KASHOP11.DAL.Models;
 using KASHOP11.DAL.Repository;
@@ -57,9 +58,9 @@ namespace KASHOP11.BLL.Service
             await _ProductRepository.CreateAsync(product);
         }
 
-        public async Task<List<ProductResponse>> GetAllProductsAsync()
+        public async Task<PagentaionResponse<ProductResponse>> GetAllProductsAsync(PaginationRequest req)
         {
-            var products = await _ProductRepository.GetAllAsync(
+            var query =  _ProductRepository.GetQeuryable(
                 p => p.status == EntityStatus.Active,
                 new string[]
                 {
@@ -67,8 +68,20 @@ namespace KASHOP11.BLL.Service
                     nameof(Product.createdBy),
                     nameof(Product.SubImages)  
                 });
+            var pagination =await query.ToPaginationAsync(req.page,req.Limit);
 
-            return products.Adapt<List<ProductResponse>>();
+            return new PagentaionResponse<ProductResponse>
+            {
+                Data = pagination.Data.Adapt < List<ProductResponse>>(),
+              TotalCount=pagination.TotalCount,
+              Page=pagination.Page,
+              Limit=pagination.Limit,
+
+
+
+
+
+            }; 
         }
 
         public async Task<ProductResponse?> GetProduct(Expression<Func<Product, bool>> filter)

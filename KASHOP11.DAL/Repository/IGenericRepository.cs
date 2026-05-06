@@ -18,6 +18,7 @@ public interface IGenericRepository<T> where T: class
         Task<bool> UpdateAsync(T entity);
         Task<bool> DeleteRangeAsync(List<T> entities);
         Task<bool> UpdateRangeAsync(List<T> entities);
+        IQueryable<T> GetQeuryable(Expression<Func<T, bool>> filter = null, string[]? includes = null);
 
     }
    
