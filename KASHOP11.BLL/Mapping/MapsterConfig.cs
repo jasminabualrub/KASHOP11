@@ -68,7 +68,9 @@ src => src.SubImages.Select(i=>$"https://localhost:7245/images/{i.ImagePath}"));
 
 
 
-
+            TypeAdapterConfig<OrderItem, OrderItemResponse>.NewConfig().Map(dest => dest.ProductName,
+                src => src.Product.Translations.Where(t => t.Language == CultureInfo.CurrentCulture.Name)
+                .Select(t => t.Name).FirstOrDefault());
 
         }
     }

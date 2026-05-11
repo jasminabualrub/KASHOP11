@@ -311,6 +311,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "KASHOP11.PL.Controllers.OrdersController",
+    "Method": "GetMyOrders",
+    "RelativePath": "api/Orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KASHOP11.PL.Controllers.ProductsController",
     "Method": "Index",
     "RelativePath": "api/Products",

@@ -115,7 +115,7 @@ namespace KASHOP11.BLL.Service
        issuer: _configuration["Jwt:Issuer"],
        audience: _configuration["Jwt:Audience"],
        claims: userClaims,
-       expires: DateTime.Now.AddMinutes(1),
+       expires: DateTime.Now.AddHours(4),
        signingCredentials: credentials
        );
 
