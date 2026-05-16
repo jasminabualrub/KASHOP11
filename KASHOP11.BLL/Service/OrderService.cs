@@ -1,4 +1,5 @@
-﻿using KASHOP11.DAL.DTO.Response;
+﻿using KASHOP11.DAL.DTO.Request;
+using KASHOP11.DAL.DTO.Response;
 using KASHOP11.DAL.Models;
 using KASHOP11.DAL.Repository;
 
@@ -35,5 +36,50 @@ namespace KASHOP11.BLL.Service
             return orders.Adapt<List<OrderResponse>>();
         }
        
+        public async Task<OrderDetailsResponse?> GetUserOrder(string userId,int OrderId)
+        {
+            var order = await _orderRepository.GetOne(
+                filter:o=>o.UserId==userId && o.Id==OrderId,
+                includes: new[]
+                {
+                
+                         nameof(Order.OrderItems),
+                   $"{nameof(Order.OrderItems)}.{nameof(OrderItem.Product)}" ,
+                    $"{nameof(Order.OrderItems)}.{nameof(OrderItem.Product)}"+
+                    $".{nameof(Product.Translations)}"
+
+                       
+                });
+            if (order == null) return null;
+            return order.Adapt<OrderDetailsResponse>();
+        }
+    
+    public async Task<bool> CancelOrder(string userId, int OrderId)
+        {
+
+            var order = await _orderRepository.GetOne(
+                filter: o => o.UserId == userId && o.Id == OrderId);
+            if (order is null) return false;
+            if (order.OrderStatus != OrderStatusEnum.Pending) return false;
+            order.OrderStatus = OrderStatusEnum.Cancelled;
+            return await _orderRepository.UpdateAsync(order);
+        }
+
+        public async Task<List<OrderResponse>> GetAllOrders(OrderStatusEnum status)
+        {
+            var order = await _orderRepository.GetAllAsync(
+                filter:o=>o.OrderStatus==status);
+            return order.Adapt<List<OrderResponse>>();
+        }
+
+        public async Task<bool> ChangeOrderStatus(int orderId, ChangeOrderStatusRequest request)
+        {
+            var order = await _orderRepository.GetOne(o => o.Id == orderId);
+            if (order.OrderStatus == OrderStatusEnum.Cancelled || order.OrderStatus == OrderStatusEnum.Delivered) return false;
+            if ((int)request.status != (int)order.OrderStatus + 1) return false;
+            order.OrderStatus = request.status;
+            return await _orderRepository.UpdateAsync(order);
+            
+        }
     }
 }

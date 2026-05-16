@@ -3,36 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.dal\\dto\\response\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|solutionrelative:kashop11.dal\\dto\\response\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.dal\\dto\\request\\changeorderstatusrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|solutionrelative:kashop11.dal\\dto\\request\\changeorderstatusrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F9FC28E-D5C8-4F12-A5F6-B539E3EEE201}|KASHOP11.BLL\\KASHOP11.BLL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.bll\\mapping\\mapsterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F9FC28E-D5C8-4F12-A5F6-B539E3EEE201}|KASHOP11.BLL\\KASHOP11.BLL.csproj|solutionrelative:kashop11.bll\\mapping\\mapsterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.dal\\dto\\response\\orderdetailsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|solutionrelative:kashop11.dal\\dto\\response\\orderdetailsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.dal\\dto\\response\\orderitemresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|solutionrelative:kashop11.dal\\dto\\response\\orderitemresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.dal\\dto\\request\\checkoutrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|solutionrelative:kashop11.dal\\dto\\request\\checkoutrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F9FC28E-D5C8-4F12-A5F6-B539E3EEE201}|KASHOP11.BLL\\KASHOP11.BLL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.bll\\service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F9FC28E-D5C8-4F12-A5F6-B539E3EEE201}|KASHOP11.BLL\\KASHOP11.BLL.csproj|solutionrelative:kashop11.bll\\service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{097893A5-99E0-4496-A372-60516792E69F}|KASHOP11.PL\\KASHOP11.PL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.pl\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{097893A5-99E0-4496-A372-60516792E69F}|KASHOP11.PL\\KASHOP11.PL.csproj|solutionrelative:kashop11.pl\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{097893A5-99E0-4496-A372-60516792E69F}|KASHOP11.PL\\KASHOP11.PL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.pl\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{097893A5-99E0-4496-A372-60516792E69F}|KASHOP11.PL\\KASHOP11.PL.csproj|solutionrelative:kashop11.pl\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.dal\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|solutionrelative:kashop11.dal\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F9FC28E-D5C8-4F12-A5F6-B539E3EEE201}|KASHOP11.BLL\\KASHOP11.BLL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.bll\\service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F9FC28E-D5C8-4F12-A5F6-B539E3EEE201}|KASHOP11.BLL\\KASHOP11.BLL.csproj|solutionrelative:kashop11.bll\\service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{097893A5-99E0-4496-A372-60516792E69F}|KASHOP11.PL\\KASHOP11.PL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.pl\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{097893A5-99E0-4496-A372-60516792E69F}|KASHOP11.PL\\KASHOP11.PL.csproj|solutionrelative:kashop11.pl\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7F9FC28E-D5C8-4F12-A5F6-B539E3EEE201}|KASHOP11.BLL\\KASHOP11.BLL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.bll\\service\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F9FC28E-D5C8-4F12-A5F6-B539E3EEE201}|KASHOP11.BLL\\KASHOP11.BLL.csproj|solutionrelative:kashop11.bll\\service\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.dal\\dto\\response\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|solutionrelative:kashop11.dal\\dto\\response\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.dal\\dto\\response\\orderitemresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD55FE5F-F8C6-42BC-BF85-451B6BE546B8}|KASHOP11.DAL\\KASHOP11.DAL.csproj|solutionrelative:kashop11.dal\\dto\\response\\orderitemresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F9FC28E-D5C8-4F12-A5F6-B539E3EEE201}|KASHOP11.BLL\\KASHOP11.BLL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.bll\\mapping\\mapsterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F9FC28E-D5C8-4F12-A5F6-B539E3EEE201}|KASHOP11.BLL\\KASHOP11.BLL.csproj|solutionrelative:kashop11.bll\\mapping\\mapsterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F9FC28E-D5C8-4F12-A5F6-B539E3EEE201}|KASHOP11.BLL\\KASHOP11.BLL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.bll\\service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F9FC28E-D5C8-4F12-A5F6-B539E3EEE201}|KASHOP11.BLL\\KASHOP11.BLL.csproj|solutionrelative:kashop11.bll\\service\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{097893A5-99E0-4496-A372-60516792E69F}|KASHOP11.PL\\KASHOP11.PL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.pl\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{097893A5-99E0-4496-A372-60516792E69F}|KASHOP11.PL\\KASHOP11.PL.csproj|solutionrelative:kashop11.pl\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{097893A5-99E0-4496-A372-60516792E69F}|KASHOP11.PL\\KASHOP11.PL.csproj|c:\\users\\jasmi\\onedrive\\desktop\\backend tasks\\kashop11\\kashop11.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,24 +94,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MapsterConfig.cs",
-              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Mapping\\MapsterConfig.cs",
-              "RelativeDocumentMoniker": "KASHOP11.BLL\\Mapping\\MapsterConfig.cs",
-              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Mapping\\MapsterConfig.cs",
-              "RelativeToolTip": "KASHOP11.BLL\\Mapping\\MapsterConfig.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAQwEgAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CheckoutRequest.cs",
+              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Request\\CheckoutRequest.cs",
+              "RelativeDocumentMoniker": "KASHOP11.DAL\\DTO\\Request\\CheckoutRequest.cs",
+              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Request\\CheckoutRequest.cs",
+              "RelativeToolTip": "KASHOP11.DAL\\DTO\\Request\\CheckoutRequest.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T13:35:57.355Z",
+              "WhenOpened": "2026-05-14T20:04:40.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "KASHOP11.DAL\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\Models\\Order.cs",
+              "RelativeToolTip": "KASHOP11.DAL\\Models\\Order.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T15:04:17.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChangeOrderStatusRequest.cs",
+              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Request\\ChangeOrderStatusRequest.cs",
+              "RelativeDocumentMoniker": "KASHOP11.DAL\\DTO\\Request\\ChangeOrderStatusRequest.cs",
+              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Request\\ChangeOrderStatusRequest.cs",
+              "RelativeToolTip": "KASHOP11.DAL\\DTO\\Request\\ChangeOrderStatusRequest.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T14:34:28.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderDetailsResponse.cs",
+              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Response\\OrderDetailsResponse.cs",
+              "RelativeDocumentMoniker": "KASHOP11.DAL\\DTO\\Response\\OrderDetailsResponse.cs",
+              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Response\\OrderDetailsResponse.cs",
+              "RelativeToolTip": "KASHOP11.DAL\\DTO\\Response\\OrderDetailsResponse.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T12:46:41.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Service\\OrderService.cs",
+              "RelativeDocumentMoniker": "KASHOP11.BLL\\Service\\OrderService.cs",
+              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Service\\OrderService.cs",
+              "RelativeToolTip": "KASHOP11.BLL\\Service\\OrderService.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAIwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T22:24:38.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Service\\IOrderService.cs",
+              "RelativeDocumentMoniker": "KASHOP11.BLL\\Service\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Service\\IOrderService.cs",
+              "RelativeToolTip": "KASHOP11.BLL\\Service\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T22:24:37.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.PL\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "KASHOP11.PL\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.PL\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "KASHOP11.PL\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAUwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T20:46:58.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderResponse.cs",
+              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Response\\OrderResponse.cs",
+              "RelativeDocumentMoniker": "KASHOP11.DAL\\DTO\\Response\\OrderResponse.cs",
+              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Response\\OrderResponse.cs",
+              "RelativeToolTip": "KASHOP11.DAL\\DTO\\Response\\OrderResponse.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T19:38:39.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderItemResponse.cs",
+              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Response\\OrderItemResponse.cs",
+              "RelativeDocumentMoniker": "KASHOP11.DAL\\DTO\\Response\\OrderItemResponse.cs",
+              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Response\\OrderItemResponse.cs",
+              "RelativeToolTip": "KASHOP11.DAL\\DTO\\Response\\OrderItemResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T19:48:55.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AuthenticationService.cs",
               "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Service\\AuthenticationService.cs",
               "RelativeDocumentMoniker": "KASHOP11.BLL\\Service\\AuthenticationService.cs",
@@ -103,76 +223,23 @@
               "RelativeToolTip": "KASHOP11.BLL\\Service\\AuthenticationService.cs",
               "ViewState": "AgIAAGkAAAAAAAAAAAAMwHUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T13:31:11.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-11T13:31:11.383Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Service\\OrderService.cs",
-              "RelativeDocumentMoniker": "KASHOP11.BLL\\Service\\OrderService.cs",
-              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Service\\OrderService.cs",
-              "RelativeToolTip": "KASHOP11.BLL\\Service\\OrderService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwCcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "MapsterConfig.cs",
+              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Mapping\\MapsterConfig.cs",
+              "RelativeDocumentMoniker": "KASHOP11.BLL\\Mapping\\MapsterConfig.cs",
+              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Mapping\\MapsterConfig.cs",
+              "RelativeToolTip": "KASHOP11.BLL\\Mapping\\MapsterConfig.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAQwEgAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T22:24:38.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-11T13:35:57.355Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IOrderService.cs",
-              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Service\\IOrderService.cs",
-              "RelativeDocumentMoniker": "KASHOP11.BLL\\Service\\IOrderService.cs",
-              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Service\\IOrderService.cs",
-              "RelativeToolTip": "KASHOP11.BLL\\Service\\IOrderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T22:24:37.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderResponse.cs",
-              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Response\\OrderResponse.cs",
-              "RelativeDocumentMoniker": "KASHOP11.DAL\\DTO\\Response\\OrderResponse.cs",
-              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Response\\OrderResponse.cs",
-              "RelativeToolTip": "KASHOP11.DAL\\DTO\\Response\\OrderResponse.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAwwBUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T19:38:39.688Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderItemResponse.cs",
-              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Response\\OrderItemResponse.cs",
-              "RelativeDocumentMoniker": "KASHOP11.DAL\\DTO\\Response\\OrderItemResponse.cs",
-              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Response\\OrderItemResponse.cs",
-              "RelativeToolTip": "KASHOP11.DAL\\DTO\\Response\\OrderItemResponse.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T19:48:55.538Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.PL\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "KASHOP11.PL\\Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.PL\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "KASHOP11.PL\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAB0AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T20:46:58.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.PL\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "KASHOP11.PL\\Controllers\\CartController.cs",
@@ -180,12 +247,11 @@
               "RelativeToolTip": "KASHOP11.PL\\Controllers\\CartController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T21:20:29.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-10T21:20:29.9Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.PL\\Program.cs",
               "RelativeDocumentMoniker": "KASHOP11.PL\\Program.cs",
@@ -197,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.PL\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "KASHOP11.PL\\Controllers\\ProductsController.cs",
@@ -209,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "IProductService.cs",
               "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Service\\IProductService.cs",
               "RelativeDocumentMoniker": "KASHOP11.BLL\\Service\\IProductService.cs",
@@ -221,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\Repository\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "KASHOP11.DAL\\Repository\\IGenericRepository.cs",
@@ -233,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\Repository\\GenericRepository.cs",
               "RelativeDocumentMoniker": "KASHOP11.DAL\\Repository\\GenericRepository.cs",
@@ -245,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Service\\ProductService.cs",
               "RelativeDocumentMoniker": "KASHOP11.BLL\\Service\\ProductService.cs",
@@ -257,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "PaginationExtensions.cs",
               "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.BLL\\Extensions\\PaginationExtensions.cs",
               "RelativeDocumentMoniker": "KASHOP11.BLL\\Extensions\\PaginationExtensions.cs",
@@ -269,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "PagentaionResponse.cs",
               "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Response\\PagentaionResponse.cs",
               "RelativeDocumentMoniker": "KASHOP11.DAL\\DTO\\Response\\PagentaionResponse.cs",
@@ -281,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "PaginationRequest.cs",
               "DocumentMoniker": "C:\\Users\\jasmi\\OneDrive\\Desktop\\backend tasks\\KASHOP11\\KASHOP11.DAL\\DTO\\Request\\PaginationRequest.cs",
               "RelativeDocumentMoniker": "KASHOP11.DAL\\DTO\\Request\\PaginationRequest.cs",

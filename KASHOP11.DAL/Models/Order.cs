@@ -10,9 +10,10 @@ namespace KASHOP11.DAL.Models
     Pending=1,
     Approved=2,
     Shipped=3,
-    Delivered=4,
-    Cancelled=5,
-    Paid=6,
+    Delivered = 4,
+    Paid = 5,
+    Cancelled=6,
+    
 
     
     
