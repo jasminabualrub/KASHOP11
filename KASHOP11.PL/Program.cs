@@ -4,6 +4,8 @@ using KASHOP11.DAL.Data;
 using KASHOP11.DAL.Models;
 using KASHOP11.DAL.Repository;
 using KASHOP11.DAL.Utilits;
+using KASHOP11.PL.Controllers;
+using KASHOP11.PL.MiddleWare;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
@@ -112,6 +114,9 @@ namespace KASHOP11.PL
             builder.Services.AddScoped<IOrderRepository, OrderRepository>();
             builder.Services.AddScoped<ICartRepository, CartRepository>();
             builder.Services.AddScoped<IOrderService, OrderService>();
+            builder.Services.AddScoped<IReviewService, BLL.Service.ReviewService>();
+            builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
+            builder.Services.AddScoped<IUserManagerService, UserManagerService>();
             builder.Services.AddScoped<IFileService, BLL.Service.FileService>();
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddScoped<CurrentUserService>();
@@ -137,6 +142,18 @@ namespace KASHOP11.PL
 
             app.MapControllers();
 
+            app.Use(async (context, next) => {
+                Console.WriteLine("processing request");
+                await next();
+                Console.WriteLine("processing response");
+            }
+            );
+            //app.Run(async (context) =>
+            //{
+            //    Console.WriteLine("Run App");
+            //});
+            app.UseMiddleware<CustomMiddleWare>(); 
+            app.UsecUSTOMM();
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;

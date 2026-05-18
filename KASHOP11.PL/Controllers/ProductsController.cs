@@ -24,7 +24,7 @@ namespace KASHOP11.PL.Controllers
         }
         [HttpGet("")]
         [Authorize]
-        public async Task<IActionResult> Index([FromQuery] PaginationRequest request)
+        public async Task<IActionResult> Index([FromQuery] ProductFilterRequest request)
         {
             // var lang = Request.Headers["Accept-lang"].ToString();
 

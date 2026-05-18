@@ -56,12 +56,15 @@ namespace KASHOP11.BLL.Service
             }
             if (!await _UserManager.IsEmailConfirmedAsync(user))
                 return new LoginResponse() { Success = false, Message = "Email is not confirmed" };
+           if(await _UserManager.IsLockedOutAsync(user))
+                return new LoginResponse() { Success = false, Message = "Account is blocked" };
+
             var result = await _UserManager.CheckPasswordAsync(user, req.Password);
             if (!result)
                 return new LoginResponse() { Success = false, Message = "Invaliadpassward" };
             var refreshToken =await GenerateRefreshToken(user);
             SetRefreshTokenCookies(refreshToken);
-            return new LoginResponse() { Success = true, Message = "success", AcessToken = await GenerateAccessToken(user) };
+            return new LoginResponse() { Success = true, Message = "success", AccessToken = await GenerateAccessToken(user) };
 
         }
 
@@ -168,7 +171,7 @@ namespace KASHOP11.BLL.Service
                 {
                     Success = true,
                     Message = "success",
-                    AcessToken = await GenerateAccessToken(user),
+                    AccessToken = await GenerateAccessToken(user),
                 };
             }
         
